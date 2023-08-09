@@ -1,0 +1,130 @@
+.active {
+  background-color: #1d4ed8;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+nav .title {
+  font-size: 1.5 rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  background-color: #172554;
+}
+
+nav ul li input {
+  display: block;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  width: 200px;
+  align-items: start;
+}
+
+nav ul li button {
+  display: block;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  width: 100px;
+  align-items: center;
+  background-color: cyan;
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+nav ul li InputText {
+  height: 20px;
+  width: 200px;
+  margin-right: 5rem;
+}
+
+@media (max-width: 480px) {
+  nav .menu {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul li {
+    width: 80%;
+    text-align: center;
+  }
+  nav ul li ul li {
+    width: 80%;
+    text-align: center;
+  }
+  nav ul li a {
+    margin: 0.25rem 0.25rem;
+  }
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li input {
+    display: block;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    width: 200px;
+    text-align: center;
+    margin-left: 75px;
+  }
+
+  nav ul li button {
+    display: block;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    width: 100px;
+    text-align: center;
+    background-color: cyan;
+    margin-left: 130px;
+  }
+}

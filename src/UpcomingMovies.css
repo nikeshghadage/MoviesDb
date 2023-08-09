@@ -1,0 +1,30 @@
+.upcomingMovies {
+  display: flex;
+  padding: 2rem;
+  background-color: rgb(69, 69, 69);
+  flex-wrap: wrap;
+}
+.image {
+  margin-top: 20px;
+  width: 280px;
+  height: 370px;
+  display: inline-flex;
+  padding: 1rem;
+  margin: 1rem;
+}
+.upcomingMovies img:not(.active):hover {
+  background-color: #eef0f0;
+}
+.upcomingMovies .poster_text {
+  color: white;
+  text-align: start;
+  width: 280px;
+  margin-left: 2rem;
+}
+@media (max-width: 480px) {
+  .upcomingMovies {
+    display: flex;
+    padding: 2rem;
+    background-color: rgb(69, 69, 69);
+  }
+}
